@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.debug{
+  border: solid 1px black;
+  height: 100px;
+  width: 100%;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.justify-content-between{
+  justify-content: space-between;
+}
