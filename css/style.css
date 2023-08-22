@@ -1,32 +1,22 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 .debug{
-  background-color: aqua;
-  border: solid 1px black;
+  background-color: rgba(0, 0, 255, .2);
+  border: 1px solid black;
   min-height: 50px;
-  width: 100%;
-}
-
-.d-flex{
-  display: flex;
-}
-
-.justify-content-between{
-  justify-content: space-between;
 }
 
 .container{
-  max-width: 1440px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
 .row{
   display: flex;
-  width: 100%;
 }
 
 .col{
@@ -34,10 +24,8 @@
 }
 
 /* HEADER */
-
 header .row{
   justify-content: space-between;
-  flex-direction: row;
 }
 
 header .row .menu{
@@ -49,62 +37,67 @@ header .row .menu{
   flex-wrap: wrap;
 }
 
-.intro .col:first-child .row{
+.intro .col:first-child .row,
+.planning .row,
+.testimonials .row,
+.benefits .row,
+.about .row
+{
   flex-direction: column;
 }
 
-.planning .row{
-  flex-direction: column;
+.benefits .row{
+  flex-wrap: wrap;
 }
 
 
+/* RESPONSIVE AREA */
 
-/* RESPONSIVE */
 
-@media screen and (min-width: 768px) {
-  .intro .col{
-    width: calc(100% / 3);
-  }  
-
-  .intro .col:first-child{
-    width: 66.6666666%;
-  }
+@media screen and (min-width:768px) {
 
   header .row .menu{
-    display: block;
-  }  
-
-  header .row .hamburger{
-    display: none;
+      display: block;
   }
 
-  .planning .row
-  .testimonials .row
-  .benefits .row
-  .about .row{
-    flex-direction: row;
+  header .row .hamburger{
+      display: none;
+  }
+
+  .intro .col{
+      width: calc(100% / 3);
+  }
+  
+  .intro .col:first-child{
+      width: 66.6666%;
+  }
+
+  .planning .row,
+  .benefits .row,
+  .about .row,
+  .testimonials .row{
+      flex-direction: row;
   }
 
   .testimonials .row .col:first-child{
-    width: 220px;
+      width: 220px;
   }
 
   .benefits .col{
-    width: 50%;
+      width: 50%;
   }
 
   .about .col:last-child{
-    width: 250px;
-  } 
+      width: 250px;
+  }
+
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width:992px){
   .intro .col:first-child .row{
-    flex-direction: row;
+      flex-direction: row;
   }
-
   .benefits .col{
-    width: calc(100% / 3);
+      width: calc(100% / 3);
   }
-
 }
