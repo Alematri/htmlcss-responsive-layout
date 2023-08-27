@@ -4,140 +4,183 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
   <!-- FONT AWESOME -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
+
   <!-- CUSTON CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Responsive Layout</title>
 </head>
 
-
 <body>
-  <header>
-
-    <div class="container">
-      <div class="row debug">
-        <div class="col debug">
-          <img src="img/logo.png" alt="logo">
-        </div>
-        <div class="col debug">
-          <nav class="menu">MENU</nav>
-          <div class="hamburger">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-        </div>
-      </div>
+  <header class="site-header">
+    <div class="container flex space-between align-center">
+      <a class="site-brand" href="#">
+        <img src="img/logo.png" alt="site name">
+      </a>
+      <span class="hamburger white-text">
+        <i class="fa-solid fa-bars"></i>
+      </span>
+      <nav class="main-menu">
+        <ul class="flex align-center">
+          <li>
+            <a class="white-text" href="#planning">Planning</a>
+          </li>
+          <li>
+            <a class="white-text" href="#testimonials">Testimonials</a>
+          </li>
+          <li>
+            <a class="white-text" href="#benefits">Features</a>
+          </li>
+          <li>
+            <a class="white-text" href="#about">About Us</a>
+          </li>
+          <li>
+            <a class="btn small rounded" href="#bottom-banner">Get Started</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
-
+ 
   <main>
 
-      <section class="intro">
+
+      <section id="intro">
           <div class="container">
-              <div class="row debug">
-                  <div class="col debug">
-                    <div class="row">
-                      <div class="col debug">
-                        <h3>Get a demo application</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure debitis placeat minima repellendus tempora nemo blanditiis omnis error sapiente id.</p>
-                        <div class="button">
-                          <i class="fa-brands fa-apple"></i>
-                          <span>App Store</span>
-                        </div>
-                        <img src="img/phone.png" alt="phone">
-                      </div>
-                      <div class="col debug">DX</div>
-                    </div>
-                  </div>
-                  <div class="col debug">2</div>
-                  <div class="col debug">3</div>
-                  <div class="col debug">4</div>
-                  <div class="col debug">5</div>
+            <div class="cards">
+              <div class="card rounded">
+                <div class="contents">
+                  <h3 class="title">Get a demo application</h3>
+                  <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure debitis placeat minima repellendus tempora nemo blanditiis omnis error sapiente id.</p>
+                  <a class="btn primary rounded" href="#">
+                  <i class="fa-brands fa-apple"></i>
+                  App Store
+                  </a>
+                </div>
+                  <img class="image" src="./img/phone.png" alt="lorem ipsum">
               </div>
-          </div>
+
+              <div class="card rounded text-center">
+                <i class="icon fa-solid fa-file-code"></i>
+                <h3 class="title">Clean Code</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tenetur beatae nemo possimus consequatur vitae dolore deserunt quos tempora sint!</p>
+              </div>
+
+              <div class="card rounded text-center">
+                <i class="icon fa-solid fa-compass-drafting"></i>
+                <h3 class="title">Web Design</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tenetur beatae nemo possimus consequatur vitae dolore deserunt quos tempora sint!</p>
+              </div>
+
+              <div class="card rounded text-center">
+                <i class="icon fa-solid fa-compass-drafting"></i>
+                <h3 class="title">Developement</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tenetur beatae nemo possimus consequatur vitae dolore deserunt quos tempora sint!</p>
+              </div>
+
+              <div class="card rounded text-center">
+                <i class="icon fa-solid fa-compass-drafting"></i>
+                <h3 class="title">Branding</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tenetur beatae nemo possimus consequatur vitae dolore deserunt quos tempora sint!</p>
+              </div>
+
+               
       </section>
+
 
       <section class="planning">
           <div class="container">
-              <div class="row debug">
-                  <div class="col debug">planning</div>
-                  <div class="col debug">2</div>
+              <div class="row ">
+                  <div class="col ">planning</div>
+                  <div class="col ">2</div>
               </div>
           </div>
       </section>
+
 
       <section class="testimonials">
           <div class="container">
               <div class="top">TEXT TESTIMONIALS</div>
               <div class="cards">
 
-                  <div class="card debug">
-                      <div class="row debug">
-                          <div class="col debug">THUMB</div>
-                          <div class="col debug">TEXT</div>
+
+                  <div class="card ">
+                      <div class="row ">
+                          <div class="col ">THUMB</div>
+                          <div class="col ">TEXT</div>
                       </div>
                   </div>
 
-                  <div class="card debug">
-                      <div class="row debug">
-                          <div class="col debug">THUMB</div>
-                          <div class="col debug">TEXT</div>
+
+                  <div class="card ">
+                      <div class="row ">
+                          <div class="col ">THUMB</div>
+                          <div class="col ">TEXT</div>
                       </div>
                   </div>
 
-                  <div class="card debug">
-                      <div class="row debug">
-                          <div class="col debug">THUMB</div>
-                          <div class="col debug">TEXT</div>
+
+                  <div class="card ">
+                      <div class="row ">
+                          <div class="col ">THUMB</div>
+                          <div class="col ">TEXT</div>
                       </div>
                   </div>
 
-                  <div class="card debug">
-                      <div class="row debug">
-                          <div class="col debug">THUMB</div>
-                          <div class="col debug">TEXT</div>
+
+                  <div class="card ">
+                      <div class="row ">
+                          <div class="col ">THUMB</div>
+                          <div class="col ">TEXT</div>
                       </div>
                   </div>
 
-                  <div class="card debug">
-                      <div class="row debug">
-                          <div class="col debug">THUMB</div>
-                          <div class="col debug">TEXT</div>
+
+                  <div class="card ">
+                      <div class="row ">
+                          <div class="col ">THUMB</div>
+                          <div class="col ">TEXT</div>
                       </div>
                   </div>
-                  
+                 
               </div>
           </div>
       </section>
+
 
       <section class="benefits">
           <div class="container">
               <div class="top">TEXT BENEFITS</div>
-              <div class="row debug">
-                  <div class="col debug">1</div>
-                  <div class="col debug">2</div>
-                  <div class="col debug">3</div>
-                  <div class="col debug">4</div>
-                  <div class="col debug">5</div>
-                  <div class="col debug">6</div>
+              <div class="row ">
+                  <div class="col ">1</div>
+                  <div class="col ">2</div>
+                  <div class="col ">3</div>
+                  <div class="col ">4</div>
+                  <div class="col ">5</div>
+                  <div class="col ">6</div>
               </div>
           </div>
       </section>
+
 
       <section class="about">
           <div class="container">
-              <div class="row debug">
-                  <div class="col debug">ABOUT TEXT</div>
-                  <div class="col debug">IMG</div>
+              <div class="row ">
+                  <div class="col ">ABOUT TEXT</div>
+                  <div class="col ">IMG</div>
               </div>
           </div>
       </section>
 
-      <section class="getstarted debug">CTA</section>
+
+      <section class="getstarted ">CTA</section>
   </main>
 
-  <footer class="debug">FOOTER</footer>
+
+  <footer class="">FOOTER</footer>
  
 </body>
 </html>
